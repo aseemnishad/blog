@@ -29,6 +29,7 @@ module.exports = React.createClass({
             name="viewport"
             content="width=device-width, initial-scale=1.0 maximum-scale=5.0"
           />
+          <meta name="description" content="A Blog by Aseem Nishad"/>
           <title>{title}</title>
           <TypographyStyle typography={typography} />
           <GoogleFont typography={typography} />
