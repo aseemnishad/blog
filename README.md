@@ -36,4 +36,4 @@ set your `kommentsCode` in `config.toml`. If you don't use komments, unset it.
 I still have a few things I'd like to do:
 
 * [ ] dynamic generation of all tag pages (instead of full list + hashes)
-* [ ] disqus seems a litle flakey. needs more testing.
+* [ ] disqus seems a litle flakey. needs more testing.# blog
