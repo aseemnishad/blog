@@ -4,7 +4,7 @@ import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
 import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
-
+import 'css/awesome.css'
 const style = {
   header: {
     marginBottom: rhythm(1.5)
@@ -16,7 +16,16 @@ const style = {
     marginRight: 0,
     marginLeft: 0,
     textAlign: 'center'
-  }, 
+  },
+  social: {
+    textAlign: 'right',
+  },  
+  icon: {
+    marginLeft: 5,
+    marginRight: 5,
+    textDecoration:'none',
+    boxShadow: 'none'  
+  },
   h1: {
     marginBottom: 0,
     fontSize: scale(1.5).fontSize,
@@ -40,7 +49,7 @@ const style = {
   },
   Link: {
     boxShadow: 'none',
-    textDecoration: 'none',
+    textDecorationLine: 'none',
     color: 'inherit'
   },
   Container: {
@@ -56,6 +65,12 @@ class Template extends React.Component {
     if (location.pathname === prefixLink('/')) {
       header = (
         <header style={style.header}>
+        <div style={style.social}>
+          <a className='so-icon' href="https://twitter.com/aseemnishad" style={style.icon}><i className="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="mailto:aseem@bititude.com" style={style.icon}><i className="fa fa-envelope-o" aria-hidden="true"></i></a>
+          <a href="https://github.com/aseemnishad" style={style.icon}><i className="fa fa-github" aria-hidden="true"></i></a>
+         </div> 
+
           <h1 style={style.h1}><Link style={style.Link} to={prefixLink('/')} >{`<${config.blogTitle}/>`}</Link></h1>
           <h2 style={style.h2}>{config.subTitle}</h2>
         </header>
