@@ -9,6 +9,14 @@ const style = {
   header: {
     marginBottom: rhythm(1.5)
   },
+  footer: {
+    marginTop: 50,
+    fontSize: 12,
+    flex: 65,
+    marginRight: 0,
+    marginLeft: 0,
+    textAlign: 'center'
+  }, 
   h1: {
     marginBottom: 0,
     fontSize: scale(1.5).fontSize,
@@ -48,7 +56,7 @@ class Template extends React.Component {
     if (location.pathname === prefixLink('/')) {
       header = (
         <header style={style.header}>
-          <h1 style={style.h1}><Link style={style.Link} to={prefixLink('/')} > {'<'}{config.blogTitle}{'/>'}  </Link></h1>
+          <h1 style={style.h1}><Link style={style.Link} to={prefixLink('/')} >{`<${config.blogTitle}/>`}</Link></h1>
           <h2 style={style.h2}>{config.subTitle}</h2>
         </header>
       )
@@ -59,10 +67,12 @@ class Template extends React.Component {
         </header>
       )
     }
+    let footer = (<div style={style.footer}>Copyright © 2017 by Aseem Nishad</div>)
     return (
     <Container style={style.Container}>
       {header}
       {children}
+      {footer}
     </Container>
     )
   }
