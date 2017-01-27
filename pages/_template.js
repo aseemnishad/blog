@@ -78,6 +78,11 @@ class Template extends React.Component {
     } else {
       header = (
         <header>
+          <div style={style.social}>
+          <a className='so-icon' href="https://twitter.com/aseemnishad" style={style.icon}><i className="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="mailto:aseem@bititude.com" style={style.icon}><i className="fa fa-envelope-o" aria-hidden="true"></i></a>
+          <a href="https://github.com/aseemnishad" style={style.icon}><i className="fa fa-github" aria-hidden="true"></i></a>
+         </div> 
           <h3 style={style.h3}><Link style={style.Link} to={prefixLink('/')} > {'<'}{config.blogTitle}{'/>'} </Link></h3>
         </header>
       )
