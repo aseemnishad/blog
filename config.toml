@@ -3,8 +3,6 @@ subTitle = ""
 blogUrl = "http://aseemnishad.com"
 authorName = "Aseem Nishad"
 authorBio = "Posts by <strong>Aseem Nishad</strong>, I work @<a href='https://bititude.com'>Bititude</a>. 
-#Follow me on <a href='https://twitter.com/aseemnishad'>Twitter</a> &amp;
-#<a href='https://github.com/aseemnishad'>Github</a>"
 #linkPrefix = "aseemnishad.github.io"
 # gaCode = "UA-0000000-0"
 disqusShortname = "aseem"
